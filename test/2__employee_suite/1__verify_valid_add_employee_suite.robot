@@ -5,15 +5,17 @@ Documentation    This suite file validates valid login of the employee and admin
 
 
 Resource    ../../resource/base/CommonFunctionality.resource
+Resource    ../../resource/pages/login_page.resource
+
 
 Test Setup    Launch Browser And Navigate To Url
 Test Teardown    Take Screenshot And Close Browser 
 
 *** Test Cases ***
 Verify Add Valid Employee
-    Input Text    name=username    Admin
-    Input Password    name=password    admin123
-    Click Element    xpath=//button[normalize-space()='Login']
+    Enter Username    Admin
+    Enter Password    admin123
+    Click Login
     Click Element    xpath=//span[normalize-space()='PIM']
     Click Element    xpath=//a[normalize-space()='Add Employee']
     Input Text    name=firstName    john

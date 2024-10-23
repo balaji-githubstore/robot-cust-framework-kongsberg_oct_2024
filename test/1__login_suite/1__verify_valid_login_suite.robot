@@ -4,6 +4,7 @@ Documentation    This suite file validates valid login of the employee and admin
 
 
 Resource    ../../resource/base/CommonFunctionality.resource
+Resource    ../../resource/pages/login_page.resource
 
 Test Setup    Launch Browser And Navigate To Url
 Test Teardown    Take Screenshot And Close Browser 
@@ -12,8 +13,8 @@ Test Teardown    Take Screenshot And Close Browser
 Verify Valid Login Test
     [Documentation]    Verify valid admin login 
     [Tags]    smoke    login
-    Input Text    name=username    Admin
-    Input Password    name=password    admin123
-    Click Element    xpath=//button[normalize-space()='Login']
+    Enter Username    Admin
+    Enter Password    admin123
+    Click Login
     Element Text Should Be    xpath=//p[contains(normalize-space(),'Quick')]    Quick Launch
 

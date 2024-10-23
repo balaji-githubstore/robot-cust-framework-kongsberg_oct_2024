@@ -4,6 +4,7 @@ Documentation    This suite file validates valid login of the employee and admin
 
 
 Resource    ../../resource/base/CommonFunctionality.resource
+Resource    ../../resource/pages/login_page.resource
 
 Test Setup    Launch Browser And Navigate To Url
 Test Teardown    Take Screenshot And Close Browser 
@@ -19,7 +20,7 @@ TC2
 *** Keywords ***
 Verify Invalid Login Template
     [Arguments]    ${username}    ${password}    ${expected_error}
-    Input Text    name=username    ${username}
-    Input Password    name=password    ${password}
-    Click Element    xpath=//button[normalize-space()='Login']
-    Element Text Should Be    xpath=//p[contains(normalize-space(),'Invalid')]    ${expected_error}
+    Enter Username    ${username}
+    Enter Password    ${password}
+    Click Login
+    Validate Invalid Login Error Message    ${expected_error}
