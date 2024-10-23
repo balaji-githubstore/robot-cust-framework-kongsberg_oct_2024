@@ -26,7 +26,6 @@ Enter Password
     ...    | Enter Password | John |
     Input Password    ${PASSWORD_LOCATOR}    ${password}
 
-
 Click Login 
     [Documentation]    Clicks on the login button
     ...    Examples:\n
