@@ -1,0 +1,18 @@
+1729672083880	geckodriver	INFO	Listening on 127.0.0.1:51327
+1729672086993	mozrunner::runner	INFO	Running command: "C:\\Users\\Balaji_Dinakaran\\.cache\\selenium\\firefox\\win64\\131.0.3\\firefox.exe" "--marionette" "--remo ... "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\BALAJI~1\\AppData\\Local\\Temp\\rust_mozprofile9kUDv9"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1729672088132	Marionette	INFO	Marionette enabled
+1729672089953	Marionette	INFO	Listening on port 51343
+Read port: 51343
+WebDriver BiDi listening on ws://127.0.0.1:51328
+1729672090519	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:51328/devtools/browser/8b2750d0-4b6c-4c64-8402-f5595998ba38
+Marionette threw an error: TypeError: browsingContext.currentWindowGlobal is null
+getMarionetteCommandsActorProxy/get/<@chrome://remote/content/marionette/actors/MarionetteCommandsParent.sys.mjs:357:17
+observe@resource://gre/modules/AsyncShutdown.sys.mjs:569:17
+
+console.error: "Marionette threw an error: TypeError: browsingContext.currentWindowGlobal is null\ngetMarionetteCommandsActorProxy/get/<@chrome://remote/content/marionette/actors/MarionetteCommandsParent.sys.mjs:357:17\nobserve@resource://gre/modules/AsyncShutdown.sys.mjs:569:17\n"
+1729672100432	Marionette	INFO	Stopped listening on port 51343
+Dynamically enable window occlusion 1
