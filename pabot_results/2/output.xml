@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.11.4 on win32)" generated="2024-10-24T01:34:49.136424" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="Verify Valid Login Suite" source="C:\Mine\Company\Konsberg\HybridFramework\test\1__login_suite\1__verify_valid_login_suite.robot">
+<test id="s1-s1-t1" name="Verify Valid Login Test" line="12">
+<kw name="Launch Browser And Navigate To Url" owner="CommonFunctionality" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-10-24T01:34:49.436728" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-10-24T01:34:49.436728" elapsed="2.195654"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-10-24T01:34:51.632382" elapsed="0.459376"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>30s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-10-24T01:34:52.091758" elapsed="0.007997"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-10-24T01:34:52.099755" level="INFO">Opening url 'https://opensource-demo.orangehrmlive.com/'</msg>
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-10-24T01:34:52.099755" elapsed="2.151513"/>
+</kw>
+<kw name="Set Screenshot Directory" owner="SeleniumLibrary">
+<arg>path=${EXECDIR}${/}logs</arg>
+<doc>Sets the directory for captured screenshots.</doc>
+<status status="PASS" start="2024-10-24T01:34:54.251268" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2024-10-24T01:34:49.436728" elapsed="4.814540"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-24T01:34:54.251268" level="INFO">Typing text 'Admin' into text field 'name=username'.</msg>
+<arg>name=username</arg>
+<arg>Admin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-24T01:34:54.251268" elapsed="14.216494"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-10-24T01:35:08.467762" level="INFO">Typing password into text field 'name=password'.</msg>
+<msg time="2024-10-24T01:35:08.511190" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>name=password</arg>
+<arg>admin123</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-24T01:35:08.467762" elapsed="0.107536"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-24T01:35:08.575298" level="INFO">Clicking element 'xpath=//button[normalize-space()='Login']'.</msg>
+<arg>xpath=//button[normalize-space()='Login']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-24T01:35:08.575298" elapsed="2.038297"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2024-10-24T01:35:10.621599" level="INFO">Verifying element 'xpath=//p[contains(normalize-space(),'Quick')]' contains exact text 'Quick Launch'.</msg>
+<arg>xpath=//p[contains(normalize-space(),'Quick')]</arg>
+<arg>Quick Launch</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2024-10-24T01:35:10.621599" elapsed="0.478536"/>
+</kw>
+<kw name="Take Screenshot And Close Browser" owner="CommonFunctionality" type="TEARDOWN">
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-10-24T01:35:11.597401" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../logs/selenium-screenshot-42.png"&gt;&lt;img src="../../logs/selenium-screenshot-42.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-10-24T01:35:11.100135" elapsed="0.497266"/>
+</kw>
+<arg>Capture Page Screenshot</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2024-10-24T01:35:11.100135" elapsed="0.497266"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-10-24T01:35:11.597401" elapsed="6.507043"/>
+</kw>
+<status status="PASS" start="2024-10-24T01:35:11.100135" elapsed="7.004309"/>
+</kw>
+<doc>Verify valid admin login</doc>
+<tag>login</tag>
+<tag>smoke</tag>
+<status status="PASS" start="2024-10-24T01:34:49.436728" elapsed="28.667716"/>
+</test>
+<doc>This suite file validates valid login of the employee and admin
+which connects to scenario SC_02 and test case TC02</doc>
+<status status="PASS" start="2024-10-24T01:34:49.167670" elapsed="28.936774"/>
+</suite>
+<status status="PASS" start="2024-10-24T01:34:49.152051" elapsed="28.952393"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">login</stat>
+<stat pass="1" fail="0" skip="0">smoke</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Verify Valid Login Suite">Suites.Verify Valid Login Suite</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

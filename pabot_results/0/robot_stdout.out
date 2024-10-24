@@ -1,0 +1,30 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.Verify Invalid Login Suite :: This suite file validates valid login ...
+==============================================================================
+TC1                                                                   | PASS |
+------------------------------------------------------------------------------
+TC2                                                                     
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Mine\Company\Konsberg\HybridFramework\test\1__login_suite\2__verify_invalid_login_suite.robot:16
+    T:  TC2    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Mine\Company\Konsberg\HybridFramework\test\1__login_suite\2__verify_invalid_login_suite.robot:17
+      Verify Invalid Login Template    jack    jack123    Invalid credentials
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Mine\Company\Konsberg\HybridFramework\test\1__login_suite\2__verify_invalid_login_suite.robot:22
+      Input Text    name=username    ${username}
+      |  ${username} = jack (str)
+______________________________________________________________________________
+| FAIL |
+ProtocolError: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+------------------------------------------------------------------------------
+Suites.Verify Invalid Login Suite :: This suite file validates val... | FAIL |
+2 tests, 1 passed, 1 failed
+==============================================================================
+Suites                                                                | FAIL |
+2 tests, 1 passed, 1 failed
+==============================================================================
+Output:  C:\Mine\Company\Konsberg\HybridFramework\pabot_results\0\output.xml

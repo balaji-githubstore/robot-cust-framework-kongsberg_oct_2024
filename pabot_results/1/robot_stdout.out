@@ -1,0 +1,51 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.Verify Valid Add Employee Suite :: This suite file validates valid l...
+==============================================================================
+Verify Add Valid Employee                                               
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Mine\Company\Konsberg\HybridFramework\test\2__employee_suite\1__verify_valid_add_employee_suite.robot:13
+    T:  Verify Add Valid Employee    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\Mine\Company\Konsberg\HybridFramework\test\2__employee_suite\1__verify_valid_add_employee_suite.robot:23
+      Click Element    xpath=//button[normalize-space()='Save']
+______________________________________________________________________________
+| FAIL |
+ElementClickInterceptedException: Message: element click intercepted: Element <button data-v-10d463b7="" data-v-304890b0="" type="submit" class="oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space">...</button> is not clickable at point (903, 487). Other element would receive the click: <div data-v-d5bfe35b="" class="oxd-form-loader">...</div>
+  (Session info: chrome=130.0.6723.70)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7D5B43AB5+28005]
+	(No symbol) [0x00007FF7D5AA83B0]
+	(No symbol) [0x00007FF7D594580A]
+	(No symbol) [0x00007FF7D599D6CE]
+	(No symbol) [0x00007FF7D599B16C]
+	(No symbol) [0x00007FF7D5998628]
+	(No symbol) [0x00007FF7D599785D]
+	(No symbol) [0x00007FF7D598990E]
+	(No symbol) [0x00007FF7D59BBA3A]
+	(No symbol) [0x00007FF7D5989246]
+	(No symbol) [0x00007FF7D59BBC50]
+	(No symbol) [0x00007FF7D59DB8B3]
+	(No symbol) [0x00007FF7D59BB7E3]
+	(No symbol) [0x00007FF7D59875C8]
+	(No symbol) [0x00007FF7D5988731]
+	GetHandleVerifier [0x00007FF7D5E3643D+3118829]
+	GetHandleVerifier [0x00007FF7D5E86C90+3448640]
+	GetHandleVerifier [0x00007FF7D5E7CF0D+3408317]
+	GetHandleVerifier [0x00007FF7D5C0A40B+841403]
+	(No symbol) [0x00007FF7D5AB340F]
+	(No symbol) [0x00007FF7D5AAF484]
+	(No symbol) [0x00007FF7D5AAF61D]
+	(No symbol) [0x00007FF7D5A9EB79]
+	BaseThreadInitThunk [0x00007FFE0CA47374+20]
+	RtlUserThreadStart [0x00007FFE0EA5CC91+33]
+------------------------------------------------------------------------------
+Suites.Verify Valid Add Employee Suite :: This suite file validate... | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Suites                                                                | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\Mine\Company\Konsberg\HybridFramework\pabot_results\1\output.xml

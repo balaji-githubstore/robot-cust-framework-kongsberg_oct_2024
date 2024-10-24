@@ -1,151 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.1.1 (Python 3.11.4 on win32)" generated="2024-10-23T11:13:08.851722" rpa="false" schemaversion="5">
-<suite id="s1" name="Verify Valid Add Employee Suite" source="c:\Mine\Company\Konsberg\HybridFramework\test\2__employee_suite\1__verify_valid_add_employee_suite.robot">
-<test id="s1-t1" name="Verify Add Valid Employee" line="13">
-<kw name="Launch Browser And Navigate To Url" owner="CommonFunctionality" type="SETUP">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-10-23T11:13:09.194889" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
-<arg>browser=${BROWSER}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-10-23T11:13:09.194889" elapsed="1.484675"/>
+<robot generator="Robot 7.1.1 (Python 3.11.4 on win32)" generated="2024-10-24T10:30:00.917553" rpa="false" schemaversion="5">
+<suite id="s1" name="Verify Invalid Login Csv Suite" source="c:\Mine\Company\Konsberg\HybridFramework\test\1__login_suite\4__verify_invalid_login_csv_suite.robot">
+<test id="s1-t1" name="TC2" line="18">
+<kw name="Log To Console" owner="BuiltIn">
+<msg time="2024-10-24T10:30:01.257098" level="FAIL">Variable '${username}' not found.</msg>
+<arg>${test_name}+${username}+${password}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="FAIL" start="2024-10-24T10:30:01.256085" elapsed="0.004522">Variable '${username}' not found.</status>
 </kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-10-23T11:13:10.679564" elapsed="0.035361"/>
-</kw>
-<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
-<arg>30s</arg>
-<doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" start="2024-10-23T11:13:10.714925" elapsed="0.003990"/>
-</kw>
-<kw name="Go To" owner="SeleniumLibrary">
-<msg time="2024-10-23T11:13:10.720181" level="INFO">Opening url 'https://opensource-demo.orangehrmlive.com/'</msg>
-<arg>url=${URL}</arg>
-<doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2024-10-23T11:13:10.720181" elapsed="4.117977"/>
-</kw>
-<kw name="Set Screenshot Directory" owner="SeleniumLibrary">
-<arg>path=${EXECDIR}${/}logs</arg>
-<doc>Sets the directory for captured screenshots.</doc>
-<status status="PASS" start="2024-10-23T11:13:14.838158" elapsed="0.000999"/>
-</kw>
-<status status="PASS" start="2024-10-23T11:13:09.194889" elapsed="5.644268"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-10-23T11:13:14.840155" level="INFO">Typing text 'Admin' into text field 'name=username'.</msg>
-<arg>name=username</arg>
-<arg>Admin</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-23T11:13:14.840155" elapsed="0.538079"/>
-</kw>
-<kw name="Input Password" owner="SeleniumLibrary">
-<msg time="2024-10-23T11:13:15.382740" level="INFO">Typing password into text field 'name=password'.</msg>
-<msg time="2024-10-23T11:13:15.421607" level="INFO">Temporally setting log level to: NONE</msg>
-<arg>name=password</arg>
-<arg>admin123</arg>
-<doc>Types the given password into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-23T11:13:15.382740" elapsed="0.100321"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-10-23T11:13:15.483061" level="INFO">Clicking element 'xpath=//button[normalize-space()='Login']'.</msg>
-<arg>xpath=//button[normalize-space()='Login']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-23T11:13:15.483061" elapsed="1.405204"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-10-23T11:13:16.890261" level="INFO">Clicking element 'xpath=//span[normalize-space()='PIM']'.</msg>
-<arg>xpath=//span[normalize-space()='PIM']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-23T11:13:16.889263" elapsed="1.663837"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-10-23T11:13:18.554098" level="INFO">Clicking element 'xpath=//a[normalize-space()='Add Employee']'.</msg>
-<arg>xpath=//a[normalize-space()='Add Employee']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-23T11:13:18.554098" elapsed="0.931067"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-10-23T11:13:19.486166" level="INFO">Typing text 'john' into text field 'name=firstName'.</msg>
-<arg>name=firstName</arg>
-<arg>john</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-23T11:13:19.486166" elapsed="0.551835"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-10-23T11:13:20.038997" level="INFO">Typing text 'w' into text field 'name=middleName'.</msg>
-<arg>name=middleName</arg>
-<arg>w</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-23T11:13:20.038001" elapsed="0.098679"/>
-</kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-10-23T11:13:20.138674" level="INFO">Typing text 'wick' into text field 'name=lastName'.</msg>
-<arg>name=lastName</arg>
-<arg>wick</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-23T11:13:20.137677" elapsed="0.092264"/>
-</kw>
-<kw name="Choose File" owner="SeleniumLibrary">
-<msg time="2024-10-23T11:13:20.245293" level="INFO">Sending C:\Mine\Company\Konsberg\HybridFramework\test-data\images\profile.png to browser.</msg>
-<arg>xpath=//input[@type='file']</arg>
-<arg>${EXECDIR}${/}test-data${/}images${/}profile.png</arg>
-<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
-<status status="PASS" start="2024-10-23T11:13:20.229941" elapsed="0.051030"/>
-</kw>
-<kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-10-23T11:13:20.282898" level="INFO">Clicking element 'xpath=//button[normalize-space()='Save']'.</msg>
-<arg>xpath=//button[normalize-space()='Save']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-10-23T11:13:20.281968" elapsed="0.056894"/>
-</kw>
-<kw name="Element Text Should Be" owner="SeleniumLibrary">
-<msg time="2024-10-23T11:13:20.339859" level="INFO">Verifying element 'xpath=//h6[contains(normalize-space(),'john')]' contains exact text 'john wick'.</msg>
-<arg>xpath=//h6[contains(normalize-space(),'john')]</arg>
-<arg>john wick</arg>
-<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
-<status status="PASS" start="2024-10-23T11:13:20.338862" elapsed="5.789975"/>
-</kw>
-<kw name="Element Attribute Value Should Be" owner="SeleniumLibrary">
-<msg time="2024-10-23T11:13:26.167449" level="INFO">Element 'name=firstName' attribute 'value' contains value 'john'.</msg>
-<arg>name=firstName</arg>
-<arg>value</arg>
-<arg>john</arg>
-<doc>Verifies element identified by ``locator`` contains expected attribute value.</doc>
-<status status="PASS" start="2024-10-23T11:13:26.128837" elapsed="0.039618"/>
-</kw>
-<kw name="Take Screenshot And Close Browser" owner="CommonFunctionality" type="TEARDOWN">
-<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
-<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2024-10-23T11:13:26.498985" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="logs/selenium-screenshot-34.png"&gt;&lt;img src="logs/selenium-screenshot-34.png" width="800px"&gt;&lt;/a&gt;</msg>
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2024-10-23T11:13:26.169496" elapsed="0.330472"/>
-</kw>
-<arg>Capture Page Screenshot</arg>
-<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<status status="PASS" start="2024-10-23T11:13:26.169496" elapsed="0.330472"/>
-</kw>
-<kw name="Close All Browsers" owner="SeleniumLibrary">
-<doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" start="2024-10-23T11:13:26.499968" elapsed="6.261416"/>
-</kw>
-<status status="PASS" start="2024-10-23T11:13:26.169496" elapsed="6.591888"/>
-</kw>
-<status status="PASS" start="2024-10-23T11:13:09.194099" elapsed="23.567285"/>
+<status status="FAIL" start="2024-10-24T10:30:01.254087" elapsed="0.006520">Variable '${username}' not found.</status>
 </test>
 <doc>This suite file validates valid login of the employee and admin
 which connects to scenario SC_02 and test case TC02</doc>
-<status status="PASS" start="2024-10-23T11:13:08.859589" elapsed="23.901795"/>
+<status status="FAIL" start="2024-10-24T10:30:00.924164" elapsed="0.336443"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Verify Valid Add Employee Suite">Verify Valid Add Employee Suite</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Verify Invalid Login Csv Suite">Verify Invalid Login Csv Suite</stat>
 </suite>
 </statistics>
 <errors>
+<msg time="2024-10-24T10:30:01.241983" level="ERROR">[ DataDriver ] Error in robot file:
+  File "c:\Mine\Company\Konsberg\HybridFramework\test\1__login_suite\4__verify_invalid_login_csv_suite.robot", line 0</msg>
+<msg time="2024-10-24T10:30:01.241983" level="ERROR">In source file:
+  File "c:\Mine\Company\Konsberg\HybridFramework\test\1__login_suite\..\..\test-data\invalid_login_data.csv", line 0</msg>
+<msg time="2024-10-24T10:30:01.252954" level="ERROR">Calling method '_start_suite' of listener 'DataDriver' failed: AttributeError: No "Test Template" keyword found for first test case.</msg>
 </errors>
 </robot>

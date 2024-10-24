@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation    This resource contains library, browser and report configuration details.
 
-Library    SeleniumLibrary        
+Library    SeleniumLibrary      
 
 
 *** Variables ***

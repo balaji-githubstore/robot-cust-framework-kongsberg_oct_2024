@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.11.4 on win32)" generated="2024-10-24T01:34:49.136424" rpa="false" schemaversion="5">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="Verify Valid Add Employee Suite" source="C:\Mine\Company\Konsberg\HybridFramework\test\2__employee_suite\1__verify_valid_add_employee_suite.robot">
+<test id="s1-s1-t1" name="Verify Add Valid Employee" line="13">
+<kw name="Launch Browser And Navigate To Url" owner="CommonFunctionality" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-10-24T01:34:49.436728" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-10-24T01:34:49.436728" elapsed="2.130327"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-10-24T01:34:51.567055" elapsed="0.041327"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>30s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-10-24T01:34:51.608382" elapsed="0.000000"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-10-24T01:34:51.608382" level="INFO">Opening url 'https://opensource-demo.orangehrmlive.com/'</msg>
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-10-24T01:34:51.608382" elapsed="11.833988"/>
+</kw>
+<kw name="Set Screenshot Directory" owner="SeleniumLibrary">
+<arg>path=${EXECDIR}${/}logs</arg>
+<doc>Sets the directory for captured screenshots.</doc>
+<status status="PASS" start="2024-10-24T01:35:03.442370" elapsed="0.007990"/>
+</kw>
+<status status="PASS" start="2024-10-24T01:34:49.436728" elapsed="14.013632"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-24T01:35:03.450360" level="INFO">Typing text 'Admin' into text field 'name=username'.</msg>
+<arg>name=username</arg>
+<arg>Admin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-24T01:35:03.450360" elapsed="1.991186"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-10-24T01:35:05.441546" level="INFO">Typing password into text field 'name=password'.</msg>
+<msg time="2024-10-24T01:35:05.524952" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>name=password</arg>
+<arg>admin123</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-24T01:35:05.441546" elapsed="0.175358"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-24T01:35:05.616904" level="INFO">Clicking element 'xpath=//button[normalize-space()='Login']'.</msg>
+<arg>xpath=//button[normalize-space()='Login']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-24T01:35:05.616904" elapsed="0.056650"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-24T01:35:05.673554" level="INFO">Clicking element 'xpath=//span[normalize-space()='PIM']'.</msg>
+<arg>xpath=//span[normalize-space()='PIM']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-24T01:35:05.673554" elapsed="2.862400"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-24T01:35:08.535954" level="INFO">Clicking element 'xpath=//a[normalize-space()='Add Employee']'.</msg>
+<arg>xpath=//a[normalize-space()='Add Employee']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-24T01:35:08.535954" elapsed="1.164406"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-24T01:35:09.700360" level="INFO">Typing text 'john' into text field 'name=firstName'.</msg>
+<arg>name=firstName</arg>
+<arg>john</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-24T01:35:09.700360" elapsed="1.236161"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-24T01:35:10.940487" level="INFO">Typing text 'w' into text field 'name=middleName'.</msg>
+<arg>name=middleName</arg>
+<arg>w</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-24T01:35:10.940487" elapsed="0.104163"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-10-24T01:35:11.044650" level="INFO">Typing text 'wick' into text field 'name=lastName'.</msg>
+<arg>name=lastName</arg>
+<arg>wick</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-10-24T01:35:11.044650" elapsed="0.094657"/>
+</kw>
+<kw name="Choose File" owner="SeleniumLibrary">
+<msg time="2024-10-24T01:35:11.140827" level="INFO">Sending C:\Mine\Company\Konsberg\HybridFramework\test-data\images\profile.png to browser.</msg>
+<arg>xpath=//input[@type='file']</arg>
+<arg>${EXECDIR}${/}test-data${/}images${/}profile.png</arg>
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<status status="PASS" start="2024-10-24T01:35:11.140827" elapsed="0.030142"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-10-24T01:35:11.170969" level="INFO">Clicking element 'xpath=//button[normalize-space()='Save']'.</msg>
+<msg time="2024-10-24T01:35:12.574083" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../logs/selenium-screenshot-44.png"&gt;&lt;img src="../../logs/selenium-screenshot-44.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-10-24T01:35:12.574083" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button data-v-10d463b7="" data-v-304890b0="" type="submit" class="oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space"&gt;...&lt;/button&gt; is not clickable at point (903, 487). Other element would receive the click: &lt;div data-v-d5bfe35b="" class="oxd-form-loader"&gt;...&lt;/div&gt;
+  (Session info: chrome=130.0.6723.70)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7D5B43AB5+28005]
+	(No symbol) [0x00007FF7D5AA83B0]
+	(No symbol) [0x00007FF7D594580A]
+	(No symbol) [0x00007FF7D599D6CE]
+	(No symbol) [0x00007FF7D599B16C]
+	(No symbol) [0x00007FF7D5998628]
+	(No symbol) [0x00007FF7D599785D]
+	(No symbol) [0x00007FF7D598990E]
+	(No symbol) [0x00007FF7D59BBA3A]
+	(No symbol) [0x00007FF7D5989246]
+	(No symbol) [0x00007FF7D59BBC50]
+	(No symbol) [0x00007FF7D59DB8B3]
+	(No symbol) [0x00007FF7D59BB7E3]
+	(No symbol) [0x00007FF7D59875C8]
+	(No symbol) [0x00007FF7D5988731]
+	GetHandleVerifier [0x00007FF7D5E3643D+3118829]
+	GetHandleVerifier [0x00007FF7D5E86C90+3448640]
+	GetHandleVerifier [0x00007FF7D5E7CF0D+3408317]
+	GetHandleVerifier [0x00007FF7D5C0A40B+841403]
+	(No symbol) [0x00007FF7D5AB340F]
+	(No symbol) [0x00007FF7D5AAF484]
+	(No symbol) [0x00007FF7D5AAF61D]
+	(No symbol) [0x00007FF7D5A9EB79]
+	BaseThreadInitThunk [0x00007FFE0CA47374+20]
+	RtlUserThreadStart [0x00007FFE0EA5CC91+33]
+</msg>
+<arg>xpath=//button[normalize-space()='Save']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-10-24T01:35:11.170969" elapsed="1.918913">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button data-v-10d463b7="" data-v-304890b0="" type="submit" class="oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space"&gt;...&lt;/button&gt; is not clickable at point (903, 487). Other element would receive the click: &lt;div data-v-d5bfe35b="" class="oxd-form-loader"&gt;...&lt;/div&gt;
+  (Session info: chrome=130.0.6723.70)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7D5B43AB5+28005]
+	(No symbol) [0x00007FF7D5AA83B0]
+	(No symbol) [0x00007FF7D594580A]
+	(No symbol) [0x00007FF7D599D6CE]
+	(No symbol) [0x00007FF7D599B16C]
+	(No symbol) [0x00007FF7D5998628]
+	(No symbol) [0x00007FF7D599785D]
+	(No symbol) [0x00007FF7D598990E]
+	(No symbol) [0x00007FF7D59BBA3A]
+	(No symbol) [0x00007FF7D5989246]
+	(No symbol) [0x00007FF7D59BBC50]
+	(No symbol) [0x00007FF7D59DB8B3]
+	(No symbol) [0x00007FF7D59BB7E3]
+	(No symbol) [0x00007FF7D59875C8]
+	(No symbol) [0x00007FF7D5988731]
+	GetHandleVerifier [0x00007FF7D5E3643D+3118829]
+	GetHandleVerifier [0x00007FF7D5E86C90+3448640]
+	GetHandleVerifier [0x00007FF7D5E7CF0D+3408317]
+	GetHandleVerifier [0x00007FF7D5C0A40B+841403]
+	(No symbol) [0x00007FF7D5AB340F]
+	(No symbol) [0x00007FF7D5AAF484]
+	(No symbol) [0x00007FF7D5AAF61D]
+	(No symbol) [0x00007FF7D5A9EB79]
+	BaseThreadInitThunk [0x00007FFE0CA47374+20]
+	RtlUserThreadStart [0x00007FFE0EA5CC91+33]
+</status>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<arg>xpath=//h6[contains(normalize-space(),'john')]</arg>
+<arg>john wick</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="NOT RUN" start="2024-10-24T01:35:13.089882" elapsed="0.000000"/>
+</kw>
+<kw name="Element Attribute Value Should Be" owner="SeleniumLibrary">
+<arg>name=firstName</arg>
+<arg>value</arg>
+<arg>john</arg>
+<doc>Verifies element identified by ``locator`` contains expected attribute value.</doc>
+<status status="NOT RUN" start="2024-10-24T01:35:13.089882" elapsed="0.000000"/>
+</kw>
+<kw name="Take Screenshot And Close Browser" owner="CommonFunctionality" type="TEARDOWN">
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-10-24T01:35:13.324429" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../logs/selenium-screenshot-45.png"&gt;&lt;img src="../../logs/selenium-screenshot-45.png" width="800px"&gt;&lt;/a&gt;</msg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-10-24T01:35:13.089882" elapsed="0.234547"/>
+</kw>
+<arg>Capture Page Screenshot</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2024-10-24T01:35:13.089882" elapsed="0.234547"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-10-24T01:35:13.324429" elapsed="2.275332"/>
+</kw>
+<status status="PASS" start="2024-10-24T01:35:13.089882" elapsed="2.509879"/>
+</kw>
+<status status="FAIL" start="2024-10-24T01:34:49.436728" elapsed="26.163033">ElementClickInterceptedException: Message: element click intercepted: Element &lt;button data-v-10d463b7="" data-v-304890b0="" type="submit" class="oxd-button oxd-button--medium oxd-button--secondary orangehrm-left-space"&gt;...&lt;/button&gt; is not clickable at point (903, 487). Other element would receive the click: &lt;div data-v-d5bfe35b="" class="oxd-form-loader"&gt;...&lt;/div&gt;
+  (Session info: chrome=130.0.6723.70)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7D5B43AB5+28005]
+	(No symbol) [0x00007FF7D5AA83B0]
+	(No symbol) [0x00007FF7D594580A]
+	(No symbol) [0x00007FF7D599D6CE]
+	(No symbol) [0x00007FF7D599B16C]
+	(No symbol) [0x00007FF7D5998628]
+	(No symbol) [0x00007FF7D599785D]
+	(No symbol) [0x00007FF7D598990E]
+	(No symbol) [0x00007FF7D59BBA3A]
+	(No symbol) [0x00007FF7D5989246]
+	(No symbol) [0x00007FF7D59BBC50]
+	(No symbol) [0x00007FF7D59DB8B3]
+	(No symbol) [0x00007FF7D59BB7E3]
+	(No symbol) [0x00007FF7D59875C8]
+	(No symbol) [0x00007FF7D5988731]
+	GetHandleVerifier [0x00007FF7D5E3643D+3118829]
+	GetHandleVerifier [0x00007FF7D5E86C90+3448640]
+	GetHandleVerifier [0x00007FF7D5E7CF0D+3408317]
+	GetHandleVerifier [0x00007FF7D5C0A40B+841403]
+	(No symbol) [0x00007FF7D5AB340F]
+	(No symbol) [0x00007FF7D5AAF484]
+	(No symbol) [0x00007FF7D5AAF61D]
+	(No symbol) [0x00007FF7D5A9EB79]
+	BaseThreadInitThunk [0x00007FFE0CA47374+20]
+	RtlUserThreadStart [0x00007FFE0EA5CC91+33]
+</status>
+</test>
+<doc>This suite file validates valid login of the employee and admin
+which connects to scenario SC_02 and test case TC02</doc>
+<status status="FAIL" start="2024-10-24T01:34:49.183294" elapsed="26.432087"/>
+</suite>
+<status status="FAIL" start="2024-10-24T01:34:49.152051" elapsed="26.465841"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Verify Valid Add Employee Suite">Suites.Verify Valid Add Employee Suite</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

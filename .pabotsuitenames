@@ -1,0 +1,7 @@
+datasources:0685c747375d57b6eb582670b4fd9802e91ac6e8
+commandlineoptions:9f8598a690c7367accf83ead504756ddd374acc9
+suitesfrom:no-suites-from-option
+file:306ae3998d52358a78f928dce7a35aecc9ce8d68
+--suite Verify Invalid Login Suite
+--suite Suites.Verify Valid Add Employee Suite
+--suite Suites.Verify Valid Login Suite
