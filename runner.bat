@@ -1,0 +1,1 @@
+start /B /wait pabot --processes 3 test\*\*.robot

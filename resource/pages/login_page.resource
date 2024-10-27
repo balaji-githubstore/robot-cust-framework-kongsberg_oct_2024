@@ -2,6 +2,7 @@
 Documentation    This resource handles all elements on the login page. 
 
 Resource    ../base/CommonFunctionality.resource
+Variables    pagelocators/login_page.py
 
 *** Variables ***
 ${USERNAME_LOCATOR}     name=username
@@ -16,7 +17,7 @@ Enter Username
     ...    Examples:\n
     ...    | Enter Username | Admin |
     ...    | Enter Username | John |
-    Input Text    ${USERNAME_LOCATOR}    ${username}
+    Input Text    ${username_locator}    ${username}
 
 Enter Password
     [Arguments]    ${password}

@@ -1,0 +1,14 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.Verify Valid Add Employee Suite :: This suite file validates valid l...
+==============================================================================
+Verify Add Valid Employee                                             | PASS |
+------------------------------------------------------------------------------
+Suites.Verify Valid Add Employee Suite :: This suite file validate... | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Suites                                                                | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Output:  C:\Mine\Company\Konsberg\HybridFramework\pabot_results\3\output.xml

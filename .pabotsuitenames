@@ -1,0 +1,9 @@
+datasources:a3c15a8df39319dab2a6603edcf6868fdc77dd6d
+commandlineoptions:9f8598a690c7367accf83ead504756ddd374acc9
+suitesfrom:no-suites-from-option
+file:f8b45f8f773a4d2c7281622b4494c934f549fc6f
+--suite Suites.Verify Invalid Login Csv Suite
+--suite Suites.Verify Invalid Login Excel Suite
+--suite Suites.Verify Invalid Login Suite
+--suite Suites.Verify Valid Add Employee Suite
+--suite Suites.Verify Valid Login Suite

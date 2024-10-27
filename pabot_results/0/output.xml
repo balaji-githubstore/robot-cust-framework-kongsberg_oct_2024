@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20241024 17:21:33.791" rpa="false" schemaversion="4">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="Verify Invalid Login Csv Suite" source="C:\Mine\Company\Konsberg\HybridFramework\test\1__login_suite\4__verify_invalid_login_csv_suite.robot">
+<test id="s1-s1-t1" name="Invalid Login Test TC1" line="17">
+<kw name="Launch Browser And Navigate To Url" library="CommonFunctionality" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20241024 17:21:34.082" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20241024 17:21:34.082" endtime="20241024 17:21:35.927"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20241024 17:21:35.928" endtime="20241024 17:21:35.965"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>30s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20241024 17:21:35.965" endtime="20241024 17:21:35.967"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20241024 17:21:35.968" level="INFO">Opening url 'https://opensource-demo.orangehrmlive.com/'</msg>
+<status status="PASS" starttime="20241024 17:21:35.967" endtime="20241024 17:21:37.947"/>
+</kw>
+<kw name="Set Screenshot Directory" library="SeleniumLibrary">
+<arg>path=${EXECDIR}${/}logs</arg>
+<doc>Sets the directory for captured screenshots.</doc>
+<status status="PASS" starttime="20241024 17:21:37.948" endtime="20241024 17:21:37.948"/>
+</kw>
+<status status="PASS" starttime="20241024 17:21:34.082" endtime="20241024 17:21:37.949"/>
+</kw>
+<kw name="Verify Invalid Login Template">
+<arg>kim</arg>
+<arg>kim113</arg>
+<arg>Invalid credentials</arg>
+<kw name="Enter Username" library="login_page">
+<arg>${username}</arg>
+<doc>Types the given text into the Username field
+Examples:
+| Enter Username | Admin |
+| Enter Username | John |</doc>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${username_locator}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20241024 17:21:37.951" level="INFO">Typing text 'kim' into text field 'name=username'.</msg>
+<msg timestamp="20241024 17:21:37.967" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=130.0.6723.70)
+Stacktrace:
+	GetHandleVerifier [0x00007FF694233AB5+28005]
+	(No symbol) [0x00007FF6941983B0]
+	(No symbol) [0x00007FF69403580A]
+	(No symbol) [0x00007FF69400FA85]
+	(No symbol) [0x00007FF6940B2AD7]
+	(No symbol) [0x00007FF6940CB1B1]
+	(No symbol) [0x00007FF6940AB7E3]
+	(No symbol) [0x00007FF6940775C8]
+	(No symbol) [0x00007FF694078731]
+	GetHandleVerifier [0x00007FF69452643D+3118829]
+	GetHandleVerifier [0x00007FF694576C90+3448640]
+	GetHandleVerifier [0x00007FF69456CF0D+3408317]
+	GetHandleVerifier [0x00007FF6942FA40B+841403]
+	(No symbol) [0x00007FF6941A340F]
+	(No symbol) [0x00007FF69419F484]
+	(No symbol) [0x00007FF69419F61D]
+	(No symbol) [0x00007FF69418EB79]
+	BaseThreadInitThunk [0x00007FF8EDB57374+20]
+	RtlUserThreadStart [0x00007FF8EDD5CC91+33]
+</msg>
+<msg timestamp="20241024 17:21:37.967" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=130.0.6723.70)
+Stacktrace:
+	GetHandleVerifier [0x00007FF694233AB5+28005]
+	(No symbol) [0x00007FF6941983B0]
+	(No symbol) [0x00007FF69403580A]
+	(No symbol) [0x00007FF69400FA85]
+	(No symbol) [0x00007FF6940B2AD7]
+	(No symbol) [0x00007FF6940CB1B1]
+	(No symbol) [0x00007FF6940AB7E3]
+	(No symbol) [0x00007FF6940775C8]
+	(No symbol) [0x00007FF694078731]
+	GetHandleVerifier [0x00007FF69452643D+3118829]
+	GetHandleVerifier [0x00007FF694576C90+3448640]
+	GetHandleVerifier [0x00007FF69456CF0D+3408317]
+	GetHandleVerifier [0x00007FF6942FA40B+841403]
+	(No symbol) [0x00007FF6941A340F]
+	(No symbol) [0x00007FF69419F484]
+	(No symbol) [0x00007FF69419F61D]
+	(No symbol) [0x00007FF69418EB79]
+	BaseThreadInitThunk [0x00007FF8EDB57374+20]
+	RtlUserThreadStart [0x00007FF8EDD5CC91+33]
+</msg>
+<status status="FAIL" starttime="20241024 17:21:37.950" endtime="20241024 17:21:38.081"/>
+</kw>
+<status status="FAIL" starttime="20241024 17:21:37.949" endtime="20241024 17:21:38.081"/>
+</kw>
+<kw name="Enter Password" library="login_page">
+<arg>${password}</arg>
+<doc>Types the given text into the Password field
+Examples:
+| Enter Password | Admin |
+| Enter Password | John |</doc>
+<status status="NOT RUN" starttime="20241024 17:21:38.081" endtime="20241024 17:21:38.081"/>
+</kw>
+<kw name="Click Login" library="login_page">
+<doc>Clicks on the login button
+Examples:
+| Click Login  |</doc>
+<status status="NOT RUN" starttime="20241024 17:21:38.081" endtime="20241024 17:21:38.081"/>
+</kw>
+<kw name="Validate Invalid Login Error Message" library="login_page">
+<arg>${expected_error}</arg>
+<doc>Verifies the invalid error message.
+Examples:
+| Validate Invalid Login Error Message | Invalid Username name |</doc>
+<status status="NOT RUN" starttime="20241024 17:21:38.081" endtime="20241024 17:21:38.081"/>
+</kw>
+<status status="FAIL" starttime="20241024 17:21:37.949" endtime="20241024 17:21:38.081"/>
+</kw>
+<kw name="Take Screenshot And Close Browser" library="CommonFunctionality" type="TEARDOWN">
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Capture Page Screenshot</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20241024 17:21:38.094" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=130.0.6723.70)
+Stacktrace:
+	GetHandleVerifier [0x00007FF694233AB5+28005]
+	(No symbol) [0x00007FF6941983B0]
+	(No symbol) [0x00007FF69403580A]
+	(No symbol) [0x00007FF69400FA85]
+	(No symbol) [0x00007FF6940B2AD7]
+	(No symbol) [0x00007FF6940CB1B1]
+	(No symbol) [0x00007FF6940AB7E3]
+	(No symbol) [0x00007FF6940775C8]
+	(No symbol) [0x00007FF694078731]
+	GetHandleVerifier [0x00007FF69452643D+3118829]
+	GetHandleVerifier [0x00007FF694576C90+3448640]
+	GetHandleVerifier [0x00007FF69456CF0D+3408317]
+	GetHandleVerifier [0x00007FF6942FA40B+841403]
+	(No symbol) [0x00007FF6941A340F]
+	(No symbol) [0x00007FF69419F484]
+	(No symbol) [0x00007FF69419F61D]
+	(No symbol) [0x00007FF69418EB79]
+	BaseThreadInitThunk [0x00007FF8EDB57374+20]
+	RtlUserThreadStart [0x00007FF8EDD5CC91+33]
+</msg>
+<msg timestamp="20241024 17:21:38.094" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=130.0.6723.70)
+Stacktrace:
+	GetHandleVerifier [0x00007FF694233AB5+28005]
+	(No symbol) [0x00007FF6941983B0]
+	(No symbol) [0x00007FF69403580A]
+	(No symbol) [0x00007FF69400FA85]
+	(No symbol) [0x00007FF6940B2AD7]
+	(No symbol) [0x00007FF6940CB1B1]
+	(No symbol) [0x00007FF6940AB7E3]
+	(No symbol) [0x00007FF6940775C8]
+	(No symbol) [0x00007FF694078731]
+	GetHandleVerifier [0x00007FF69452643D+3118829]
+	GetHandleVerifier [0x00007FF694576C90+3448640]
+	GetHandleVerifier [0x00007FF69456CF0D+3408317]
+	GetHandleVerifier [0x00007FF6942FA40B+841403]
+	(No symbol) [0x00007FF6941A340F]
+	(No symbol) [0x00007FF69419F484]
+	(No symbol) [0x00007FF69419F61D]
+	(No symbol) [0x00007FF69418EB79]
+	BaseThreadInitThunk [0x00007FF8EDB57374+20]
+	RtlUserThreadStart [0x00007FF8EDD5CC91+33]
+</msg>
+<status status="FAIL" starttime="20241024 17:21:38.086" endtime="20241024 17:21:38.124"/>
+</kw>
+<status status="PASS" starttime="20241024 17:21:38.086" endtime="20241024 17:21:38.124"/>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20241024 17:21:38.124" endtime="20241024 17:21:40.714"/>
+</kw>
+<status status="PASS" starttime="20241024 17:21:38.081" endtime="20241024 17:21:40.714"/>
+</kw>
+<status status="FAIL" starttime="20241024 17:21:34.077" endtime="20241024 17:21:40.715">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=130.0.6723.70)
+Stacktrace:
+	GetHandleVerifier [0x00007FF694233AB5+28005]
+	(No symbol) [0x00007FF6941983B0]
+	(No symbol) [0x00007FF69403580A]
+	(No symbol) [0x00007FF69400FA85]
+	(No symbol) [0x00007FF6940B2AD7]
+	(No symbol) [0x00007FF6940CB1B1]
+	(No symbol) [0x00007FF6940AB7E3]
+	(No symbol) [0x00007FF6940775C8]
+	(No symbol) [0x00007FF694078731]
+	GetHandleVerifier [0x00007FF69452643D+3118829]
+	GetHandleVerifier [0x00007FF694576C90+3448640]
+	GetHandleVerifier [0x00007FF69456CF0D+3408317]
+	GetHandleVerifier [0x00007FF6942FA40B+841403]
+	(No symbol) [0x00007FF6941A340F]
+	(No symbol) [0x00007FF69419F484]
+	(No symbol) [0x00007FF69419F61D]
+	(No symbol) [0x00007FF69418EB79]
+	BaseThreadInitThunk [0x00007FF8EDB57374+20]
+	RtlUserThreadStart [0x00007FF8EDD5CC91+33]
+</status>
+</test>
+<test id="s1-s1-t2" name="Invalid Login Test TC2" line="17">
+<kw name="Launch Browser And Navigate To Url" library="CommonFunctionality" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20241024 17:21:40.719" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20241024 17:21:40.718" endtime="20241024 17:21:46.079"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20241024 17:21:46.079" endtime="20241024 17:21:46.126"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>30s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20241024 17:21:46.126" endtime="20241024 17:21:46.128"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20241024 17:21:46.129" level="INFO">Opening url 'https://opensource-demo.orangehrmlive.com/'</msg>
+<status status="PASS" starttime="20241024 17:21:46.128" endtime="20241024 17:21:50.254"/>
+</kw>
+<kw name="Set Screenshot Directory" library="SeleniumLibrary">
+<arg>path=${EXECDIR}${/}logs</arg>
+<doc>Sets the directory for captured screenshots.</doc>
+<status status="PASS" starttime="20241024 17:21:50.255" endtime="20241024 17:21:50.256"/>
+</kw>
+<status status="PASS" starttime="20241024 17:21:40.718" endtime="20241024 17:21:50.256"/>
+</kw>
+<kw name="Verify Invalid Login Template">
+<arg>peter</arg>
+<arg>peter113</arg>
+<arg>Invalid credentials</arg>
+<kw name="Enter Username" library="login_page">
+<arg>${username}</arg>
+<doc>Types the given text into the Username field
+Examples:
+| Enter Username | Admin |
+| Enter Username | John |</doc>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${username_locator}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20241024 17:21:50.259" level="INFO">Typing text 'peter' into text field 'name=username'.</msg>
+<status status="PASS" starttime="20241024 17:21:50.258" endtime="20241024 17:21:50.877"/>
+</kw>
+<status status="PASS" starttime="20241024 17:21:50.257" endtime="20241024 17:21:50.878"/>
+</kw>
+<kw name="Enter Password" library="login_page">
+<arg>${password}</arg>
+<doc>Types the given text into the Password field
+Examples:
+| Enter Password | Admin |
+| Enter Password | John |</doc>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>${PASSWORD_LOCATOR}</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20241024 17:21:50.880" level="INFO">Typing password into text field 'name=password'.</msg>
+<msg timestamp="20241024 17:21:50.909" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20241024 17:21:50.965" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20241024 17:21:50.879" endtime="20241024 17:21:50.965"/>
+</kw>
+<status status="PASS" starttime="20241024 17:21:50.878" endtime="20241024 17:21:50.965"/>
+</kw>
+<kw name="Click Login" library="login_page">
+<doc>Clicks on the login button
+Examples:
+| Click Login  |</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${LOGIN_LOCATOR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20241024 17:21:50.965" level="INFO">Clicking element 'xpath=//button[normalize-space()='Login']'.</msg>
+<status status="PASS" starttime="20241024 17:21:50.965" endtime="20241024 17:21:51.022"/>
+</kw>
+<status status="PASS" starttime="20241024 17:21:50.965" endtime="20241024 17:21:51.022"/>
+</kw>
+<kw name="Validate Invalid Login Error Message" library="login_page">
+<arg>${expected_error}</arg>
+<doc>Verifies the invalid error message.
+Examples:
+| Validate Invalid Login Error Message | Invalid Username name |</doc>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>${ERROR_LOCATOR}</arg>
+<arg>${expected_error}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20241024 17:21:51.024" level="INFO">Verifying element 'xpath=//p[contains(normalize-space(),'Invalid')]' contains exact text 'Invalid credentials'.</msg>
+<status status="PASS" starttime="20241024 17:21:51.023" endtime="20241024 17:21:52.163"/>
+</kw>
+<status status="PASS" starttime="20241024 17:21:51.022" endtime="20241024 17:21:52.163"/>
+</kw>
+<status status="PASS" starttime="20241024 17:21:50.257" endtime="20241024 17:21:52.163"/>
+</kw>
+<kw name="Take Screenshot And Close Browser" library="CommonFunctionality" type="TEARDOWN">
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Capture Page Screenshot</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20241024 17:21:52.483" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../logs/selenium-screenshot-48.png"&gt;&lt;img src="../../logs/selenium-screenshot-48.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20241024 17:21:52.165" endtime="20241024 17:21:52.483"/>
+</kw>
+<status status="PASS" starttime="20241024 17:21:52.164" endtime="20241024 17:21:52.483"/>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20241024 17:21:52.483" endtime="20241024 17:21:58.771"/>
+</kw>
+<status status="PASS" starttime="20241024 17:21:52.164" endtime="20241024 17:21:58.771"/>
+</kw>
+<status status="PASS" starttime="20241024 17:21:40.715" endtime="20241024 17:21:58.771"/>
+</test>
+<doc>This suite file validates valid login of the employee and admin
+which connects to scenario SC_02 and test case TC02</doc>
+<status status="FAIL" starttime="20241024 17:21:33.822" endtime="20241024 17:21:58.771"/>
+</suite>
+<status status="FAIL" starttime="20241024 17:21:33.802" endtime="20241024 17:21:58.771"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="1" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="1" fail="1" skip="0" id="s1-s1" name="Verify Invalid Login Csv Suite">Suites.Verify Invalid Login Csv Suite</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20241024 17:21:37.967" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=130.0.6723.70)
+Stacktrace:
+	GetHandleVerifier [0x00007FF694233AB5+28005]
+	(No symbol) [0x00007FF6941983B0]
+	(No symbol) [0x00007FF69403580A]
+	(No symbol) [0x00007FF69400FA85]
+	(No symbol) [0x00007FF6940B2AD7]
+	(No symbol) [0x00007FF6940CB1B1]
+	(No symbol) [0x00007FF6940AB7E3]
+	(No symbol) [0x00007FF6940775C8]
+	(No symbol) [0x00007FF694078731]
+	GetHandleVerifier [0x00007FF69452643D+3118829]
+	GetHandleVerifier [0x00007FF694576C90+3448640]
+	GetHandleVerifier [0x00007FF69456CF0D+3408317]
+	GetHandleVerifier [0x00007FF6942FA40B+841403]
+	(No symbol) [0x00007FF6941A340F]
+	(No symbol) [0x00007FF69419F484]
+	(No symbol) [0x00007FF69419F61D]
+	(No symbol) [0x00007FF69418EB79]
+	BaseThreadInitThunk [0x00007FF8EDB57374+20]
+	RtlUserThreadStart [0x00007FF8EDD5CC91+33]
+</msg>
+<msg timestamp="20241024 17:21:38.094" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=130.0.6723.70)
+Stacktrace:
+	GetHandleVerifier [0x00007FF694233AB5+28005]
+	(No symbol) [0x00007FF6941983B0]
+	(No symbol) [0x00007FF69403580A]
+	(No symbol) [0x00007FF69400FA85]
+	(No symbol) [0x00007FF6940B2AD7]
+	(No symbol) [0x00007FF6940CB1B1]
+	(No symbol) [0x00007FF6940AB7E3]
+	(No symbol) [0x00007FF6940775C8]
+	(No symbol) [0x00007FF694078731]
+	GetHandleVerifier [0x00007FF69452643D+3118829]
+	GetHandleVerifier [0x00007FF694576C90+3448640]
+	GetHandleVerifier [0x00007FF69456CF0D+3408317]
+	GetHandleVerifier [0x00007FF6942FA40B+841403]
+	(No symbol) [0x00007FF6941A340F]
+	(No symbol) [0x00007FF69419F484]
+	(No symbol) [0x00007FF69419F61D]
+	(No symbol) [0x00007FF69418EB79]
+	BaseThreadInitThunk [0x00007FF8EDB57374+20]
+	RtlUserThreadStart [0x00007FF8EDD5CC91+33]
+</msg>
+</errors>
+</robot>

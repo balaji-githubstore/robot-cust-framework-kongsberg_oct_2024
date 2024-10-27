@@ -1,0 +1,16 @@
+==============================================================================
+Suites                                                                        
+==============================================================================
+Suites.Verify Invalid Login Excel Suite :: This suite file validates valid ...
+==============================================================================
+Invalid Login Test TC1                                                | PASS |
+------------------------------------------------------------------------------
+Invalid Login Test TC2                                                | PASS |
+------------------------------------------------------------------------------
+Suites.Verify Invalid Login Excel Suite :: This suite file validat... | PASS |
+2 tests, 2 passed, 0 failed
+==============================================================================
+Suites                                                                | PASS |
+2 tests, 2 passed, 0 failed
+==============================================================================
+Output:  C:\Mine\Company\Konsberg\HybridFramework\pabot_results\1\output.xml

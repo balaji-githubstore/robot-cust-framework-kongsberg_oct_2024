@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20241024 17:22:04.448" rpa="false" schemaversion="4">
+<suite id="s1" name="Suites">
+<suite id="s1-s1" name="Verify Valid Login Suite" source="C:\Mine\Company\Konsberg\HybridFramework\test\1__login_suite\1__verify_valid_login_suite.robot">
+<test id="s1-s1-t1" name="Verify Valid Login Test" line="13">
+<kw name="Launch Browser And Navigate To Url" library="CommonFunctionality" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20241024 17:22:04.715" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20241024 17:22:04.715" endtime="20241024 17:22:06.497"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20241024 17:22:06.497" endtime="20241024 17:22:06.547"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>30s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20241024 17:22:06.547" endtime="20241024 17:22:06.551"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20241024 17:22:06.552" level="INFO">Opening url 'https://opensource-demo.orangehrmlive.com/'</msg>
+<status status="PASS" starttime="20241024 17:22:06.552" endtime="20241024 17:22:10.911"/>
+</kw>
+<kw name="Set Screenshot Directory" library="SeleniumLibrary">
+<arg>path=${EXECDIR}${/}logs</arg>
+<doc>Sets the directory for captured screenshots.</doc>
+<status status="PASS" starttime="20241024 17:22:10.912" endtime="20241024 17:22:10.914"/>
+</kw>
+<status status="PASS" starttime="20241024 17:22:04.714" endtime="20241024 17:22:10.914"/>
+</kw>
+<kw name="Enter Username" library="login_page">
+<arg>Admin</arg>
+<doc>Types the given text into the Username field
+Examples:
+| Enter Username | Admin |
+| Enter Username | John |</doc>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${username_locator}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20241024 17:22:10.915" level="INFO">Typing text 'Admin' into text field 'name=username'.</msg>
+<status status="PASS" starttime="20241024 17:22:10.915" endtime="20241024 17:22:12.459"/>
+</kw>
+<status status="PASS" starttime="20241024 17:22:10.914" endtime="20241024 17:22:12.459"/>
+</kw>
+<kw name="Enter Password" library="login_page">
+<arg>admin123</arg>
+<doc>Types the given text into the Password field
+Examples:
+| Enter Password | Admin |
+| Enter Password | John |</doc>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>${PASSWORD_LOCATOR}</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20241024 17:22:12.459" level="INFO">Typing password into text field 'name=password'.</msg>
+<msg timestamp="20241024 17:22:12.512" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20241024 17:22:12.581" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20241024 17:22:12.459" endtime="20241024 17:22:12.581"/>
+</kw>
+<status status="PASS" starttime="20241024 17:22:12.459" endtime="20241024 17:22:12.581"/>
+</kw>
+<kw name="Click Login" library="login_page">
+<doc>Clicks on the login button
+Examples:
+| Click Login  |</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${LOGIN_LOCATOR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20241024 17:22:12.581" level="INFO">Clicking element 'xpath=//button[normalize-space()='Login']'.</msg>
+<status status="PASS" starttime="20241024 17:22:12.581" endtime="20241024 17:22:14.101"/>
+</kw>
+<status status="PASS" starttime="20241024 17:22:12.581" endtime="20241024 17:22:14.101"/>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<arg>xpath=//p[contains(normalize-space(),'Quick')]</arg>
+<arg>Quick Launch</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<msg timestamp="20241024 17:22:14.102" level="INFO">Verifying element 'xpath=//p[contains(normalize-space(),'Quick')]' contains exact text 'Quick Launch'.</msg>
+<status status="PASS" starttime="20241024 17:22:14.101" endtime="20241024 17:22:14.503"/>
+</kw>
+<kw name="Take Screenshot And Close Browser" library="CommonFunctionality" type="TEARDOWN">
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Capture Page Screenshot</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20241024 17:22:14.964" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../../logs/selenium-screenshot-51.png"&gt;&lt;img src="../../logs/selenium-screenshot-51.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20241024 17:22:14.504" endtime="20241024 17:22:14.964"/>
+</kw>
+<status status="PASS" starttime="20241024 17:22:14.504" endtime="20241024 17:22:14.964"/>
+</kw>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20241024 17:22:14.964" endtime="20241024 17:22:21.187"/>
+</kw>
+<status status="PASS" starttime="20241024 17:22:14.504" endtime="20241024 17:22:21.187"/>
+</kw>
+<doc>Verify valid admin login</doc>
+<tag>login</tag>
+<tag>smoke</tag>
+<status status="PASS" starttime="20241024 17:22:04.713" endtime="20241024 17:22:21.187"/>
+</test>
+<doc>This suite file validates valid login of the employee and admin
+which connects to scenario SC_02 and test case TC02</doc>
+<status status="PASS" starttime="20241024 17:22:04.480" endtime="20241024 17:22:21.187"/>
+</suite>
+<status status="PASS" starttime="20241024 17:22:04.460" endtime="20241024 17:22:21.190"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">login</stat>
+<stat pass="1" fail="0" skip="0">smoke</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Suites">Suites</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Verify Valid Login Suite">Suites.Verify Valid Login Suite</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
